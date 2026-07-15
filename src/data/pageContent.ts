@@ -10,7 +10,7 @@ export type ContentSection = {
   eyebrow?: string;
   title: string;
   body?: string;
-  variant?: "cards" | "timeline" | "organization" | "faq" | "contact" | "gallery" | "list";
+  variant?: "cards" | "timeline" | "organization" | "faq" | "contact" | "gallery" | "documents" | "list";
   items: ContentItem[];
 };
 
@@ -178,21 +178,30 @@ export const pageContentByPath: Record<string, PageContent> = {
     heroLead: "품질, 환경, 기술 혁신과 기업 역량을 공인 인증 체계로 관리합니다.",
     introTitle: "신뢰할 수 있는 제품과 조직을 위한 인증 기반",
     introBody: "국제 품질·환경 시스템부터 기술혁신, 연구개발, 소재·부품·장비 전문성까지 지속적으로 검증받고 있습니다.",
-    stats: [{ value: "9", label: "주요 기업·품질 인증" }],
+    stats: [{ value: "10", label: "주요 기업·품질 인증" }, { value: "2M", label: "수출의 탑 수상" }],
     sections: [
       {
-        eyebrow: "CERTIFICATE LIST",
-        title: "주요 인증",
+        eyebrow: "CERTIFICATE GALLERY",
+        title: "주요 인증서",
+        variant: "documents",
         items: [
-          { title: "ISO 9001:2015", description: "품질경영시스템" },
-          { title: "ISO 14001:2015", description: "환경경영시스템" },
+          { title: "ISO 9001:2015", description: "품질경영시스템", image: "/assets/quality/certification-iso9001.png" },
+          { title: "ISO 14001:2015", description: "환경경영시스템", image: "/assets/quality/certification-iso14001.png" },
+          { title: "이노비즈", description: "기술혁신형 중소기업", image: "/assets/quality/certification-innobiz.png" },
+        ],
+      },
+      {
+        eyebrow: "CORPORATE CERTIFICATIONS",
+        title: "기업 역량 인증",
+        items: [
           { title: "소재·부품·장비 전문기업", description: "핵심 제조 기술 전문성 확인" },
           { title: "기업부설연구소", description: "연구개발 조직 인정" },
-          { title: "이노비즈", description: "기술혁신형 중소기업" },
           { title: "벤처기업", description: "혁신 성장 기업 확인" },
           { title: "성과공유기업", description: "협력 성과 공유 체계" },
           { title: "수출프론티어기업", description: "해외 시장 개척 역량" },
           { title: "일자리 우수기업", description: "고용과 근무환경 우수성" },
+          { title: "한국무역협회", description: "글로벌 교역과 수출 활동 기반" },
+          { title: "200만불 수출의 탑", description: "해외 시장에서 축적한 수출 성과" },
         ],
       },
     ],
@@ -273,6 +282,16 @@ export const pageContentByPath: Record<string, PageContent> = {
     introBody: "국내 핵심 기술 등록 12건과 미국·일본·중국·대만을 포함한 해외 등록 21건을 기반으로 독자 기술을 확장합니다.",
     stats: [{ value: "12", label: "국내 특허 등록" }, { value: "21", label: "해외 특허 등록" }, { value: "4", label: "해외 등록 국가" }],
     sections: [
+      {
+        eyebrow: "PATENT GALLERY",
+        title: "대표 특허증",
+        variant: "documents",
+        items: [
+          { title: "제10-2256132호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-2256132.jpg" },
+          { title: "제10-2064485호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-2064485.jpg" },
+          { title: "제10-2020662호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-2020662.jpg" },
+        ],
+      },
       {
         eyebrow: "KOREAN PATENTS",
         title: "국내 주요 등록",

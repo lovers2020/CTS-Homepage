@@ -397,7 +397,13 @@ function ContentSectionView({ section, index }: { section: ContentSection; index
               <article className="depth-item" key={`${item.title}-${itemIndex}`}>
                 {item.image && (
                   <div className="depth-item__image">
-                    <img src={item.image} alt="" width="705" height="520" loading="lazy" />
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      width={variant === "documents" ? 826 : 705}
+                      height={variant === "documents" ? 1168 : 520}
+                      loading={variant === "documents" ? "eager" : "lazy"}
+                    />
                   </div>
                 )}
                 <div className="depth-item__content">

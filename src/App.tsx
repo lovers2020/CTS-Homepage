@@ -16,6 +16,7 @@ import {
 } from "./components/RoutePages";
 import { ScrollTop } from "./components/ScrollTop";
 import { VideoSection } from "./components/VideoSection";
+import { QualityPolicyPage } from "./components/QualityPolicyPage";
 
 function HomePage() {
   return (
@@ -31,6 +32,10 @@ function HomePage() {
 
 function resolvePage(pathname: string) {
   if (pathname === "/") return <HomePage />;
+
+  if (pathname === "/quality-policy/" || pathname === "/quality-policy") {
+    return <QualityPolicyPage />;
+  }
 
   const product = findProductByPath(pathname);
   if (product) return <ProductDetailPage product={product} />;
