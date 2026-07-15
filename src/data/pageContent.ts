@@ -280,16 +280,26 @@ export const pageContentByPath: Record<string, PageContent> = {
     heroLead: "정밀 물류 통신과 제어 핵심 기술을 국내외 지식재산으로 보호하고 있습니다.",
     introTitle: "연구개발의 결과를 제품 경쟁력으로 연결합니다.",
     introBody: "국내 핵심 기술 등록 12건과 미국·일본·중국·대만을 포함한 해외 등록 21건을 기반으로 독자 기술을 확장합니다.",
-    stats: [{ value: "12", label: "국내 특허 등록" }, { value: "21", label: "해외 특허 등록" }, { value: "4", label: "해외 등록 국가" }],
+    stats: [{ value: "12", label: "국내 특허 등록" }, { value: "1", label: "디자인 등록" }, { value: "21", label: "해외 특허 등록" }, { value: "4", label: "해외 등록 국가" }],
     sections: [
       {
         eyebrow: "PATENT GALLERY",
-        title: "대표 특허증",
+        title: "국내 특허·디자인등록증",
         variant: "documents",
         items: [
           { title: "제10-2256132호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-2256132.jpg" },
           { title: "제10-2064485호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-2064485.jpg" },
           { title: "제10-2020662호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-2020662.jpg" },
+          { title: "제10-1936296호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-1936296.jpg" },
+          { title: "제10-1936271호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-1936271.jpg" },
+          { title: "제10-1926012호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-1926012.jpg" },
+          { title: "제10-1749309호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-1749309.jpg" },
+          { title: "제10-1749294호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-1749294.jpg" },
+          { title: "제10-1659964호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-1659964.jpg" },
+          { title: "제10-1619113호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-1619113.jpg" },
+          { title: "제10-1616706호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-1616706.jpg" },
+          { title: "제10-1527686호", description: "캔탑스 국내 등록 특허", image: "/assets/quality/patent-1527686.jpg" },
+          { title: "제30-0856783호", description: "캔탑스 디자인 등록", image: "/assets/quality/design-0856783.jpg" },
         ],
       },
       {
