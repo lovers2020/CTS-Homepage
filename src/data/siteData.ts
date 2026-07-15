@@ -74,6 +74,7 @@ export const navigation: NavItem[] = [
     label: "고객지원",
     children: [
       { label: "제품문의", href: "/about/" },
+      { label: "품질보증", href: "/quality-policy/" },
       { label: "FAQ", href: "/about/faq/" },
     ],
   },
